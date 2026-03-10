@@ -6,5 +6,12 @@ An interactive game where you guess a randomly generated number, with a catch wh
 * Difficulty scaling (# of lives based on difficulty)
 * Basic error-handling
 
-## References
+## Instructions
+* Ensure Python is installed on your computer.
+* Download/clone this repo
+* Navigate to the project folder
+* Run the program
+* Enjoy!
+
+## References — if you want to do it too!
 https://roadmap.sh/projects/number-guessing-game
