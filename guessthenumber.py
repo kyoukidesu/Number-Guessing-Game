@@ -37,7 +37,7 @@ def main():
             guess = int(input("Guess the number: "))
         except ValueError:
             print("Insert a number!")
-            exit()
+            continue
 
         if guess == rand_num:
             print("Spot on!")
@@ -63,9 +63,7 @@ def main():
         elif another_round == "N":
             print("Goodbye!")
             exit()
-        while another_round != "Y" or another_round != "N":
+        while another_round != "Y" and another_round != "N":
             another_round = input("Choose Y (Yes) or N (No) (Y/N) ")
 
 main()
-
-
