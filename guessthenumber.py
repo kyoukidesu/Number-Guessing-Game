@@ -9,12 +9,12 @@ You have 5 chances to guess the correct number, sounds fair?
 """
 
 print(welcome_msg)
-time.sleep(1.5)
+time.sleep(0.5)
 
 def main():
 
     diff_text = "Easy: 10 chances\nMedium: 5 chances\nHard: 3 chances\n"
-    time.sleep(1.5)
+    time.sleep(0.5)
     print(diff_text)
 
     diff = input("Select your difficulty: ")
@@ -67,3 +67,5 @@ def main():
             another_round = input("Choose Y (Yes) or N (No) (Y/N) ")
 
 main()
+
+
