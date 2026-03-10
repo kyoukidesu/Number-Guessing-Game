@@ -59,13 +59,14 @@ def main():
 
     if chances == 0:
         another_round = input("Game over! Wanna try again? (Y/N) ")
+        while another_round not in ["Y", "N"]:
+            another_round = input("Choose Y (Yes) or N (No) (Y/N) ")
         if another_round == "Y":
             main()
         elif another_round == "N":
             print("Goodbye!")
             time.sleep(1.5)
             exit()
-        while another_round != "Y" and another_round != "N":
-            another_round = input("Choose Y (Yes) or N (No) (Y/N) ")
+
 
 main()
