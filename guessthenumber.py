@@ -17,7 +17,7 @@ def main():
     time.sleep(0.5)
     print(diff_text)
 
-    diff = input("Select your difficulty (case-sensitive): ")
+    diff = input("Select your difficulty: ")
     chances = 0
 
     while diff != "Easy" and diff != "Medium" and diff != "Hard":
@@ -46,6 +46,7 @@ def main():
                 main()
             elif play_again == "N":
                 print("Goodbye!")
+                time.sleep(1.5)
                 exit()
             while play_again != "Y" and play_again != "N":
                 play_again = input("Choose Y (Yes) or N (No) (Y/N) ")
@@ -62,11 +63,9 @@ def main():
             main()
         elif another_round == "N":
             print("Goodbye!")
+            time.sleep(1.5)
             exit()
         while another_round != "Y" and another_round != "N":
             another_round = input("Choose Y (Yes) or N (No) (Y/N) ")
 
 main()
-
-
-
